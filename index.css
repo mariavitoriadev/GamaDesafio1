@@ -209,3 +209,14 @@ section .description {
     margin-bottom: 5px;
     display: inline-block;
 }
+
+@media(min-width: 768px) {
+    .differentials {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .differentials .content {
+        max-width: 60%;
+    }
+}
