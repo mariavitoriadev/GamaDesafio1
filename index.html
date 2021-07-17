@@ -90,14 +90,19 @@
                 <h2 class="title">Comprar cursos</h2>
                 <p class="description">Insira seus dados abaixo e fique por dentro de todas os nossos cursos e promoções:</p>
             </div>
-            <form class="form">
+            <form class="form" id="form" method="GET" action="/submit">
                 <div class="form-wrapper">
                     <input id="name" name="name" type="text" placeholder="Insira seu nome:" required="">
                     <input id="email" name="email" type="text" placeholder="Insira seu e-mail:" required="">
                     <input type="submit" class="submit" value="Enviar">
                 </div>
+                <p class="message-success">
+                    Obrigada por se inscrever!
+                </p>
             </form>
         </section>
     </main>
+
+    <script type="text/javascript" src="/index.js"></script>
 </body>
 </html>

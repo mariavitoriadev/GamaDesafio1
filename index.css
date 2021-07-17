@@ -234,6 +234,7 @@ section .description {
 
 .form-section .form {
     padding: 24px;
+    position: relative;
     background-color: #00d25a;
 }
 
@@ -269,6 +270,18 @@ section .description {
     display: block;
 }
 
+.form-section .message-success {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+}
+
 @media(min-width: 768px) {
     .form-section {
         display: flex;
@@ -282,5 +295,9 @@ section .description {
     }
     .form-section .form {
         flex-grow: 1;
+    }
+    .form-section .message-success {
+        width: max-content;
+        font-size: 22px;
     }
 }
