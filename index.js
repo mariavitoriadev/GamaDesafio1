@@ -6,3 +6,13 @@ document.querySelector("#form").addEventListener('submit', function(e) {
     document.querySelector('.form-wrapper').style.visibility = "hidden";
     document.querySelector('.message-success').style.display = "block";
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

@@ -58,6 +58,8 @@ body {
 
 .header .menu-item a {
     display: none;
+    color: #000;
+    text-decoration: none;
     margin-left: 25px;
 }
 
