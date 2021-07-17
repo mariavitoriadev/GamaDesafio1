@@ -114,13 +114,13 @@ body {
     }
 }
 
-/* About Us */
+/* Section Commons */
 
-.about-us {
-    padding: 40px 0;
+section.right {
+    text-align: right;
 }
 
-.about-us h2 {
+section h2.title {
     font-size: 28px;
     color: #000;
     font-weight: 900;
@@ -128,14 +128,32 @@ body {
     text-transform: uppercase;
 }
 
-.about-us .description {
+section .description {
     font-size: 14px;
     line-height: 21px;
+}
+
+@media(min-width: 768px) {
+    section h2.title {
+        font-size: 38px;
+        margin-bottom: 30px;  
+    }
+    section .description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* About Us */
+
+.about-us {
+    padding: 40px 0 0;
 }
 
 .about-us .about-us-image {
     display: none;
 }
+
 
 @media(min-width: 768px) {
     .about-us {
@@ -144,20 +162,50 @@ body {
         align-items: center;
         justify-content: space-between;
     }
-    .about-us h2 {
-        font-size: 38px;
-        margin-bottom: 30px;
-    }
     .about-us .content {
         max-width: 70%;
-    }
-    .about-us .description {
-        font-size: 16px;
-        line-height: 24px;
     }
     .about-us .about-us-image {
         display: block;
         max-height: 300px;
         object-fit: contain;
     }
+}
+
+/* Differentials */
+
+.differentials {
+    margin-bottom: 40px;
+    padding: 40px 0 0;
+}
+
+.differentials .content {
+    margin-bottom: 30px;
+}
+
+.differentials .icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.differentials .icon {
+    text-align: center;
+    font-size: 14px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    width: calc((100% / 2) - 40px);
+}
+
+.differentials .icon img {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.differentials .icon span {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    display: inline-block;
 }
