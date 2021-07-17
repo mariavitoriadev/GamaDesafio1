@@ -103,13 +103,61 @@ body {
     padding: 40px 24px 0px;
     text-align: center;
     color: #00d25a;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 @media(min-width: 768px) {
     .hero h1 {
-        font-size: 36px;
+        font-size: 46px;
+    }
+}
+
+/* About Us */
+
+.about-us {
+    padding: 40px 0;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-us .description {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.about-us .about-us-image {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .about-us {
+        display: flex;
+        padding: 70px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about-us h2 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    .about-us .content {
+        max-width: 70%;
+    }
+    .about-us .description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .about-us .about-us-image {
+        display: block;
+        max-height: 300px;
+        object-fit: contain;
     }
 }
