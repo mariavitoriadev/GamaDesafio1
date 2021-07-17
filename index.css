@@ -213,6 +213,7 @@ section .description {
 @media(min-width: 768px) {
     .differentials {
         display: flex;
+        padding: 70px 0;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -227,16 +228,13 @@ section .description {
     margin-bottom: 50px;
 }
 
+.form-section .content {
+    margin-bottom: 25px;
+}
+
 .form-section .form {
     padding: 24px;
     background-color: #00d25a;
-}
-
-.form-section .form-description {
-    color: #FFFFFF;
-    line-height: 1.4;
-    font-weight: 600;
-    margin-bottom: 25px;
 }
 
 .form-section .form input {
@@ -269,4 +267,20 @@ section .description {
     width: max-content;
     margin: 0 auto;
     display: block;
+}
+
+@media(min-width: 768px) {
+    .form-section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .form-section .content {
+        max-width: 35%;
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+    .form-section .form {
+        flex-grow: 1;
+    }
 }
