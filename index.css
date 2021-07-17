@@ -220,3 +220,53 @@ section .description {
         max-width: 60%;
     }
 }
+
+/*Form Section */
+
+.form-section {
+    margin-bottom: 50px;
+}
+
+.form-section .form {
+    padding: 24px;
+    background-color: #00d25a;
+}
+
+.form-section .form-description {
+    color: #FFFFFF;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.form-section .form input {
+    padding: 10px 5px;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: #ffffff3d;
+    border-bottom: 1px solid #FFF;
+    font-family: Raleway,sans-serif;
+}
+
+.form-section .form input::placeholder {
+    color: #FFFFFF;
+}
+
+.form-section .form input:focus {
+    outline: none;
+}
+
+.form-section .form input.submit {
+    background-color: #FFFFFF;
+    padding: 7px 40px;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+}
